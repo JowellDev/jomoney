@@ -1,9 +1,10 @@
+from typing import Optional
 from pydantic import BaseModel
 from datetime import date
 
 class TransactionSchema(BaseModel):
     emitter_id: int
-    receiver_id: id
+    receiver_id: int
     nature: str
     amount: float
 
